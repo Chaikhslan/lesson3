@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Кириллица - Latynsha</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="start_text">Translator</string>
+    <string name="toolbar_text">Кириллица - Latynsha</string>
+    <string name="edit_text_hint">Введите текст</string>
+</resources>
