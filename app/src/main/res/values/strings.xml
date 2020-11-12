@@ -4,4 +4,9 @@
     <string name="start_text">Translator</string>
     <string name="toolbar_text">Кириллица - Latynsha</string>
     <string name="edit_text_hint">Введите текст</string>
+    <string name="menu_send_avtor">Avtorga hat jazy</string>
+    <string name="menu_qosymshamen_bolisu">Qosymshamen bolisu</string>
+    <string name="menu_magan_kosymsha_kerek">Magan kosymsha kerek</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
