@@ -8,4 +8,6 @@
     <dimen name="start_margin_end">92dp</dimen>
     <dimen name="toolbar_text_size">22sp</dimen>
     <dimen name="appPadding">10dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="card_elevation">1dp</dimen>
 </resources>
