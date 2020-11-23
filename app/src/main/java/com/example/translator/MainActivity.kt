@@ -1,14 +1,13 @@
 package com.example.translator
 
-import android.annotation.SuppressLint
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
-import android.widget.TextView
+import android.widget.PopupMenu
 import android.widget.Toast
-import androidx.core.content.res.TypedArrayUtils.getText
-import androidx.core.view.get
-import androidx.recyclerview.widget.RecyclerView
+import com.example.translator.ui.AlertFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +20,30 @@ class MainActivity : AppCompatActivity() {
             if (message.isEmpty()){
                 Toast.makeText(this, "Введите сообщения",Toast.LENGTH_LONG).show()
             } else sendMessage(message)
+        }
+
+        text_view.setOnClickListener {
+
+            var dialog = AlertFragment()
+            dialog.show(supportFragmentManager, "alertDialog")
+
+//            val popupMenu = PopupMenu(this, it)
+//            popupMenu.setOnMenuItemClickListener { item ->
+//                when (item.itemId){
+//                    R.id.menu_alert -> {
+////                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://resoder.com"))
+//                        startActivity(intent)
+//                        true
+//                    }
+//                    R.id.menu_alert_toast -> {
+//                        Toast.makeText(this,"Show Toast",Toast.LENGTH_LONG).show()
+//                        true
+//                    }
+//                    else -> false
+//                }
+//            }
+//            popupMenu.inflate(R.menu.alert_menu)
+//            popupMenu.show()
         }
     }
 
@@ -70,7 +93,6 @@ class MainActivity : AppCompatActivity() {
             val text1 = uniArr.joinToString(separator = "")
             text_view.text = text1.capitalize()
         }
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
