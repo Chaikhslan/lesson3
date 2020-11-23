@@ -11,4 +11,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_alert_text">asdfsadf</string>
     <string name="menu_alert_text_toast">dfsdf</string>
+    <string name="menu_copy_text">Kóshіrý</string>
+    <string name="menu_share_text">Bólіsý</string>
+    <string name="menu_delete_text">Óshіrý</string>
+    <string name="menu_favorite_text">Unaǵandar tіzіmіne qosý</string>
 </resources>
